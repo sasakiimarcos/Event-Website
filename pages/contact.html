@@ -44,27 +44,34 @@
         </div>
     </nav>
 
-    <h1>Contact Us</h1>
-    <div class="contact-info">
-        <div class="contact-info-address"></div>
-        <div class="contact-info-number"></div>
-        <div class="contact-info-email"></div>
-    </div>
     <div class="contact-form">
+        <div class="contact-form-h1">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-element">
+                <h2>Address</h2>
+                <h3>12 Somalian Avenue, Mogadishu, Somalia</h3>
+            </div>
+            <div class="contact-info-element">
+                <h2>Number</h2>
+                <h3>+252 123 456 789</h3>
+            </div>
+            <div class="contact-info-element">
+                <h2 class="contact-info-">Mail</h2>
+                <h3>contact-techcon@techcon.com</h3>
+            </div>
+        </div>
+        <div class="contact-form-h1">
+            <h1>Leave us a Comment</h1>
+        </div>
+    
         <form action="">
-            <div class="contact-form-element">
-                <label for="name">Name</label>
-                <input type="text" name="name">
-            </div>
-            <div class="contact-form-elemnt">
-                <label for="">E-Mail</label>
-                <input type="email" name="email">
-            </div>
-            <div class="contact-form-element">
-                <label for="comment">Comment</label>
-                <textarea name="comment" id="" cols="30" rows="10"></textarea>
-            </div>
-            <input type="button" value="Submit">
+            <input class="contact-form-text" type="text" name="name" placeholder="Name">
+            <input class="contact-form-text" type="email" name="email" placeholder="E-mail">
+            <input class="contact-form-text" type="tel" name="phone" placeholder="Phone">
+            <textarea class="contact-form-text" name="comment" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+            <input class="contact-form-submit" type="button" value="Send">
         </form>
     </div>
 

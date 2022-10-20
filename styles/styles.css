@@ -485,3 +485,260 @@ body {
     }
 }
 
+/* Schedule Table */
+
+.schedule-h1 {
+    text-align: center;
+}
+
+.schedule-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    min-width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule-table thead tr {
+    background-color: rgb(209, 209, 209);
+    text-align: left;
+    font-weight: bold;
+}
+
+.schedule-table th {
+    padding: 10px;
+}
+
+.schedule-table td {
+    padding: 10px;
+}
+
+.schedule-table tbody tr {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.schedule-table ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.schedule-table {
+    text-align: start;
+}
+
+.schedule-table tbody #schedule-table-end {
+    border-bottom: 20px solid rgb(209, 209, 209);
+}
+
+.schedule-table tbody tr:hover {
+    background-color: rgb(207, 207, 207);
+    cursor: default;
+}
+
+/* Venue */
+
+.venue {
+    padding: 20px 0px 40px 0px;
+    background-image: url(../images/background4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.venue-h1 {
+    background-color: rgb(235, 235, 235, 0.8);
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.venue-h1 h1 {
+    padding: 20px;
+}
+
+.venue-text {
+    text-align: center;
+}
+
+.venue-photos {
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 20px 0px;
+}
+
+.photos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photos-hotel {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.photos-hotel img {
+    object-fit:cover;  
+    max-height: 300px;
+}
+
+.venue-map {
+    padding: 20px 0px;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.map iframe {
+    display: flex;
+    width:50%;
+}
+
+@media only screen and (max-width:800px) {
+    .map iframe {
+        display: flex;
+        width:80%;
+    }
+}
+
+/* Sponsors */
+
+.sponsor-container {
+    padding: 20px 0px;
+    background-image: url(../images/background2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.sponsor-h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    background-color: rgb(235, 235, 235, 0.8);
+}
+
+.sponsor-h1 h1 {
+    padding: 20px;
+}
+
+.sponsors {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    justify-content: center;
+    grid-row-gap: 30px;
+}
+
+.sponsors-logos {
+    display: grid;
+    justify-items: center;
+}
+
+.sponsors-logos img {
+    width: 250px;
+    border-radius: 50px;
+}
+
+.sponsors-logos:hover > img{
+    width: 250px;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+/* Contact */
+
+.contact-form {
+    background-image: url(../images/background1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px ;
+}
+
+.contact-form-h1 {  
+    background-color: rgb(235, 235, 235, 0.8);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-info-element {
+    background-color: rgb(235, 235, 235, 0.8);
+    padding: 10px 30px 10px 30px;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.contact-form-h1 h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form form {
+    margin: auto;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /*Adjusts border of the box*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+/* Register */
+
+.register-form {
+    background-image: url(../images/background3.jpg);
+    padding: 20px;
+    background-position: center;
+}
+
+.register-form-h1 {
+    background-color: rgb(235, 235, 235, 0.8);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-form-h1 h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.register-form form {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.register-form-text {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
