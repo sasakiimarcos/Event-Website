@@ -7,46 +7,29 @@ body {
     padding: 0px;
 }
 
+.title {
+    padding: 20px;
+    background-color: rgb(235, 235, 235, 0.8);  
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Navbar */
 
-.navbar {
-    margin-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1px;
+.navbar-brand img{
+max-width: 100px;
 }
 
-.navbar-logo img{
-    max-height: 100px;
-    padding-left: 10px;
+.nav-item {
+    margin-left: 10px;
 }
 
-.navbar-logo img:hover{
+.navbar-brand img:hover {
     transform: scale(1.1);
-}
-
-.navbar-links ul {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    font-family: 'DO Futuristic', sans-serif;
-    color: black;
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-}
-
-.navbar-links li:hover {
-    background-color: rgb(235, 235, 235);
-    transform:scale(1.1)
 }
 
 /* Index Banner */
@@ -63,15 +46,14 @@ body {
 .banner-background {
     width: 100%;
     display: grid;
-    height: 100%;
+    height: fit-content;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
     opacity: 0.8;
 }
 
 .banner-background img {
     width: 100%;
-    max-height: 600px;
-    min-height: 500px;
+    min-height: 700px;
     object-fit: cover;
     opacity: 0.5;
 }
@@ -79,13 +61,12 @@ body {
 .banner-text {
     position: absolute;
     width: 100%;
-    display: flexbox;
     align-self: center;
 }
 
 .banner-text h1 {
-    margin: 0cm;
-    font-size: 100px;
+    margin-bottom: 40px;
+    font-size: 10vw;
     display: block;
     text-align: center;
     font-weight: bold;
@@ -97,8 +78,13 @@ body {
     border-radius: 10px;
 }
 
+.banner-text h4 {
+    font-size: 1.75vw;
+}
+
 .banner-text h2 {
     margin-bottom: 30px;
+    font-size: 2.5vw;
     display: block;
     text-align: center;
 }
@@ -111,8 +97,7 @@ body {
 
 .banner-text-info-child {
     background-color: rgb(235, 235, 235, 0.8);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     margin-bottom: 20px;
     display: inline-flex;
     box-shadow: 5px 5px;
@@ -128,9 +113,21 @@ body {
     display: flex;
     background-color: rgb(235, 235, 235, 0.6);
     border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     margin: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .banner-text h2 {
+        margin-bottom: 30px;
+        font-size: 4vw;
+        display: block;
+        text-align: center;
+    }
+    
+    .banner-text h4 {
+        font-size: 3vw;
+    }
 }
 
 /* Index Info */
@@ -147,17 +144,19 @@ body {
 }
 
 .info-block {
-    width: 100%;
+    width: fit-content;
     display: grid;
     justify-content: center;
     border-radius: 50px;
+    background-color: black;
 }
 
 .info-block img {
     border-radius: 50px;
-    width: 500px;
+    width: 40vw;
     height: 100%;
     object-fit: cover;
+    opacity: 0.3;
 }
 
 .info-block-text {
@@ -165,7 +164,49 @@ body {
     position: absolute;
     align-self: center;
     justify-self: center;
+    color: white;
 }
+
+.info-block-text h1 {
+    text-align: center;
+    font-size: 10vw;
+}
+
+.info-block-text h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .info {
+        padding-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);    
+        justify-items: center;
+        grid-gap: 20px;
+        background-image: linear-gradient(rgb(0,0,0,0.8), rgb(255,255,255,0.6), rgb(0,0,0,0.8));
+        padding-bottom: 30px;
+    }
+
+    .info-block img {
+        border-radius: 50px;
+        width: 70vw;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+    }
+
+    .info-block-text h1 {
+        text-align: center;
+        font-size: 15vw;
+    }
+
+    .info-block-text h2 {
+        text-align: center;
+        font-size: 4vw;
+    }
+}   
 
 /* Footer */
 
@@ -222,11 +263,7 @@ body {
     background-color: rgb(235, 235, 235);
 }
 
-@media only screen and (max-width: 600px) {
-    .banner-text h1 {
-        font-size: 50px;
-    }
-}
+
 
 /* About Us Articles*/
 
@@ -331,21 +368,6 @@ body {
 
 /* Main Speakers */
 
-.main-speakers-h1 h1 {
-    text-align: center;
-}
-
-.main-speakers-h1 {
-    background-color: rgb(235, 235, 235, 0.8);
-    width: fit-content;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 20px;
-}
-
 .main-speakers {
     padding-top: 20px;
     width: 80%;
@@ -421,21 +443,6 @@ body {
 }
 
 /* Other Speakers */
-
-.other-speakers-h1 {
-    background-color: rgb(235, 235, 235, 0.8);
-    width: fit-content;
-    border-radius: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 20px;
-}
-
-.other-speakers-h1 h1 {
-    text-align: center;
-}
 
 .speakers {
     background-image: url(../images/background5.jpg);
@@ -550,19 +557,6 @@ body {
     background-attachment: fixed;
 }
 
-.schedule-h1 {
-    background-color: rgb(235, 235, 235, 0.8);
-    border-radius: 20px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.schedule-h1 h1 {
-    text-align: center;
-    padding: 20px;
-}
-
 .schedule-table {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -618,18 +612,6 @@ body {
     background-image: url(../images/background4.jpg);
     background-position: center;
     background-attachment: fixed;
-}
-
-.venue-h1 {
-    background-color: rgb(235, 235, 235, 0.8);
-    width: fit-content;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 20px;
-}
-
-.venue-h1 h1 {
-    padding: 20px;
 }
 
 .venue-text {
@@ -691,20 +673,6 @@ body {
     background-attachment: fixed;
 }
 
-
-.sponsor-h1 {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    width: fit-content;
-    text-align: center;
-    background-color: rgb(235, 235, 235, 0.8);
-}
-
-.sponsor-h1 h1 {
-    padding: 20px;
-}
-
 .sponsors {
     display: grid;
     gap: 1rem;
@@ -736,15 +704,7 @@ body {
     background-image: url(../images/background1.jpg);
     background-position: center;
     background-attachment: fixed;
-    padding: 30px 0px 50px 0px;
-}
-
-.contact-form-h1 {  
-    background-color: rgb(235, 235, 235, 0.8);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
+    padding: 20px 0px 50px 0px;
 }
 
 .contact-info {
@@ -757,18 +717,21 @@ body {
     background-color: rgb(235, 235, 235, 0.8);
     padding: 10px 30px 10px 30px;
     min-width: 300px;
-    margin-bottom: 30px;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
-.contact-form-h1 h1{
-    text-align: center;
-    padding: 20px;
+.contact-info-element h2 {
+    font-size: 35px;
+}
+
+.contact-info-element h3 {
+    font-size: 15px;
 }
 
 .contact-form form {
     margin: auto;
-    max-width: 800px;
+    max-width: 60%;
     overflow: hidden;
 }
 
@@ -808,6 +771,14 @@ body {
     transform: scale(1.1);
 }
 
+@media only screen and (max-width: 700px) {
+    .contact-form form {
+        margin: auto;
+        max-width: 80%;
+        overflow: hidden;
+    }
+}
+
 /* Register */
 
 .register-form {
@@ -816,21 +787,8 @@ body {
     background-position: center;
 }
 
-.register-form-h1 {
-    background-color: rgb(235, 235, 235, 0.8);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-}
-
-.register-form-h1 h1 {
-    padding: 20px;
-    text-align: center;
-}
-
 .register-form form {
-    width: 800px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -853,7 +811,6 @@ body {
     padding: 10px;
     background-color: rgb(235, 235, 235, 0.8); 
     font-size: larger;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -865,4 +822,13 @@ body {
     background-color: rgb(235, 235, 235, 0.8); 
     font-size: larger;
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+    .register-form form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }    
 }
