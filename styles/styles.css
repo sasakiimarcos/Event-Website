@@ -21,7 +21,8 @@ body {
 /* Navbar */
 
 .navbar-brand img{
-max-width: 100px;
+    max-width: 100px;
+    transition: 0.5s;
 }
 
 .nav-item {
@@ -234,6 +235,7 @@ max-width: 100px;
     text-decoration: none;
     border-style: groove;
     border-radius: 50%;
+    transition: 0.5s;
 }
 
 .footer-socials a:hover{
@@ -251,6 +253,7 @@ max-width: 100px;
     padding: 10px;
     display: inline-block;
     list-style: none;
+    transition: 0.5s;
 }
 
 .footer-list a{
@@ -398,6 +401,7 @@ max-width: 100px;
     width: 100%;
     border-radius: 20%;
     z-index: 1;
+    transition: 0.5s;
 }
 
 .main-speaker-photos h3 {
@@ -406,6 +410,7 @@ max-width: 100px;
     justify-self: center;
     font-size: 25px;
     opacity: 0;
+    transition: 0.5s;
 }
 
 .main-speaker-photos:hover > img{
@@ -480,6 +485,7 @@ max-width: 100px;
     height: 100%;
     border-radius: 20%;
     z-index: 1;
+    transition: 0.5s;
 }
 
 .other-speaker-photos h3 {
@@ -488,6 +494,7 @@ max-width: 100px;
     justify-self: center;
     font-size: 20px;
     opacity: 0;
+    transition: 0.5s;
 }
 
 .other-speaker-photos:hover > img{
@@ -585,6 +592,7 @@ max-width: 100px;
 .schedule-table tbody tr {
     background-color: rgb(255, 255, 255, 0.7);
     border-bottom: 1px solid rgb(0, 0, 0);
+    transition: 0.2s;
 }
 
 .schedule-table ul {
@@ -687,12 +695,19 @@ max-width: 100px;
     justify-items: center;
 }
 
-.sponsors-logos img {
-    width: 250px;
+.sponsors-logos-image {
+    width: fit-content;
+    background-color: rgb(128, 128, 128);
     border-radius: 50px;
 }
 
-.sponsors-logos:hover > img{
+.sponsors-logos-image img {
+    width: 250px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.sponsors-logos-image img:hover {
     width: 250px;
     border-radius: 50px;
     opacity: 0.8;
@@ -753,6 +768,7 @@ max-width: 100px;
 }
 
 .contact-form-send input {
+    margin-bottom: 20px;
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(235, 235, 235, 0.8); 
@@ -760,6 +776,17 @@ max-width: 100px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    transition: stretch 1s ease-in;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .contact-form-send input:hover {
@@ -768,8 +795,18 @@ max-width: 100px;
     padding: 10px;
     background-color: rgb(235, 235, 235, 0.8); 
     font-size: larger;
-    transform: scale(1.1);
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
+
+
+
+
+
 
 @media only screen and (max-width: 700px) {
     .contact-form form {
@@ -821,7 +858,12 @@ max-width: 100px;
     padding: 10px;
     background-color: rgb(235, 235, 235, 0.8); 
     font-size: larger;
-    transform: scale(1.1);
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
 @media only screen and (max-width: 700px) {
