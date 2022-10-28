@@ -1,0 +1,47 @@
+/* Venue */
+
+.venue {
+    padding: 20px 0px 40px 0px;
+    background-image: url(../images/background4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    .venue-text {
+        text-align: center;
+    }
+    .venue-photos {
+        background-color: rgb(255, 255, 255, 0.9);
+        padding: 20px 0px;
+        .photos {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .photos-hotel {
+            display: flex;
+            padding-bottom: 20px;
+            img {
+                object-fit:cover;  
+                max-height: 300px;
+            }
+        }
+    }
+    .venue-map {
+        padding: 20px 0px;
+        margin-top: 40px;
+        background-color: rgb(255, 255, 255, 0.9);
+        .map {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+            iframe {
+                display: flex;
+                width:50%;
+                @media only screen and (max-width:800px) {
+                    display: flex;
+                    width:80%;
+                }
+            }
+        }        
+    }
+}

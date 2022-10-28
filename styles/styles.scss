@@ -1,0 +1,104 @@
+@import "./index";
+@import "./aboutus";
+@import "./speakers";
+@import "./schedule";
+@import "./venue";
+@import "./sponsors";
+@import "./contact";
+@import "./register";
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.title {
+    padding: 20px;
+    background-color: rgb(235, 235, 235, 0.8);  
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navbar */
+
+.navbar-brand img{
+    max-width: 100px;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 30px;
+    background-color: gainsboro;
+    position: absolute;
+    width: 100%;
+    .footer-socials{
+        width: 100%;
+        text-align: center;
+        a{
+            background-color: lightgrey;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            font-size: larger;
+            padding: 10px;
+            font-size: large;
+            text-align: center;
+            text-decoration: none;
+            border-style: groove;
+            border-radius: 50%;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.2);
+                background-color: aliceblue;
+            }
+        }
+    }
+    .footer-list {
+        text-align: center;
+        li {
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 10px;
+            display: inline-block;
+            list-style: none;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgb(235, 235, 235);
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+// Button animation
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
