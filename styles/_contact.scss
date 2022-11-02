@@ -1,0 +1,84 @@
+/* Contact */
+
+.contact-form {
+    background-image: url(../images/background1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px 0px 50px 0px;
+    .contact-info {
+        display: flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        .contact-info-element {
+            background-color: rgb(235, 235, 235, 0.8);
+            padding: 10px 30px 10px 30px;
+            min-width: 300px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 35px;
+            }  
+            h3 {
+                font-size: 15px;
+            }          
+        }
+    }
+    form {
+        margin: auto;
+        max-width: 60%;
+        overflow: hidden;
+        .contact-form-text {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box; /*Adjusts border of the box*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        textarea{
+            resize: none;
+        }
+        .contact-form-send {
+            display: flex;
+            input {
+                margin-bottom: 20px;
+                border-radius: 5px;
+                padding: 10px;
+                background-color: rgb(235, 235, 235, 0.8); 
+                font-size: larger;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                transition: stretch 1s ease-in;
+                &:hover {
+                    cursor: pointer;
+                    border-radius: 5px;
+                    padding: 10px;
+                    background-color: rgb(235, 235, 235, 0.8); 
+                    font-size: larger;
+                    animation-name: stretch;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-out;
+                    animation-direction: alternate;
+                    animation-iteration-count: infinite;
+                    animation-play-state: running;
+                }
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            margin: auto;
+            max-width: 80%;
+            overflow: hidden;
+        }
+    }
+}
+
+    @keyframes stretch {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }

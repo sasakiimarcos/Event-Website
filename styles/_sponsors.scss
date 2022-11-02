@@ -1,0 +1,35 @@
+/* Sponsors */
+
+.sponsor-container {
+    padding: 20px 0px;
+    background-image: url(../images/background2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    .sponsors {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: 250px;
+        justify-content: center;
+        grid-row-gap: 30px;
+        .sponsors-logos {
+            display: grid;
+            justify-items: center;
+            .sponsors-logos-image {
+                width: fit-content;
+                background-color: rgb(128, 128, 128);
+                border-radius: 50px;
+                img {
+                    width: 250px;
+                    border-radius: 50px;
+                    transition: 0.5s;
+                    &:hover {
+                        width: 250px;
+                        border-radius: 50px;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+/* About Us Articles*/
+
+.aboutus {
+    padding: 20px 0;
+    background-image: url(../images/background7.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    .aboutus-title {
+        border-radius: 20px;
+        background-color: rgb(235, 235, 235, 0.8);
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        h1 {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    .aboutus-container {
+        padding: 20px;
+        background-color: rgb(255, 255, 255, 0.9);
+        margin: 50px 0px;
+        .article1 {
+            margin: 20px 10px 0px 10px;
+            display: grid;
+            grid-template-areas: 
+            "image head"
+            "image text"
+            "image text";
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            .article-header {
+                display: grid;
+                grid-area: head;
+                align-items: flex-end;
+            }
+            .article-text {
+                display: grid;
+                grid-area: text;
+            }
+            .article-image {
+                border-radius: 10px;
+                display: grid;
+                grid-area: image;
+                width: 100%;
+            }
+            @media only screen and (max-width: 600px) {
+                margin: 20px 10px 0px 10px;
+                display: grid;
+                grid-template-areas: 
+                "head head"
+                "image image"
+                "text text";
+                grid-template-rows: 1fr 4fr 2fr;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 10px;
+                grid-column-gap: 20px;
+            }
+        }
+        .article2 {
+            margin: 20px 10px 0px 10px;
+            display: grid;
+            grid-template-areas: 
+            "head image"
+            "text image"
+            "text image";
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 20px;
+            .article-header {
+                display: grid;
+                grid-area: head;
+                align-items: flex-end;
+            }
+            .article-text {
+                display: grid;
+                grid-area: text;
+            }
+            .article-image {
+                border-radius: 10px;
+                display: grid;
+                grid-area: image;
+                width: 100%;
+            }
+            @media only screen and (max-width: 600px) {
+                margin: 20px 10px 0px 10px;
+                display: grid;
+                grid-template-areas: 
+                "head head"
+                "image image"
+                "text text";
+                grid-template-rows: 1fr 4fr 2fr;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 10px;
+                grid-column-gap: 20px;
+            }
+        }
+    }
+}
