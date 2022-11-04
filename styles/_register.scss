@@ -1,9 +1,9 @@
 @import "./variables";
 
 .register-form {
+    @include background-settings;
     background-image: url(../images/background3.jpg);
-    padding: 20px 0px 40px 0px;
-    background-position: center;
+    padding-bottom: 40px;
     .register-title {
         @include title
     }
@@ -33,13 +33,8 @@
             margin-left: auto;
             margin-right: auto;
             &:hover {
+                @include button-animation;
                 cursor: pointer;
-                animation-name: stretch;
-                animation-duration: 1s;
-                animation-timing-function: ease-out;
-                animation-direction: alternate;
-                animation-iteration-count: infinite;
-                animation-play-state: running;
             }
         }
     }

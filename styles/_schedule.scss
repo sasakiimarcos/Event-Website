@@ -3,15 +3,13 @@
 /* Schedule Table */
 
 .schedule {
-    padding: 20px 0px;
+    @include background-settings;
     background-image: url(../images/background6.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    overflow: scroll;
     .schedule-title {
         @include title
     }
     .schedule-table {
+        overflow: scroll;
         margin-top: 20px;
         margin-bottom: 20px;
         border-collapse: collapse;
@@ -53,5 +51,8 @@
         tbody #schedule-table-end {
             border-bottom: 20px solid rgb(209, 209, 209);
         }
+    }
+    @media only screen and (max-width:500px) {
+        overflow: scroll;
     }
 }

@@ -3,17 +3,14 @@
 // Speakers
 
 .speakers {
-    padding-top: 20px;
+    @include background-settings;
     background-image: url(../images/background5.jpg);
-    background-position: center;
-    background-attachment: fixed;
     .speakers-title{
         @include title;
     }
     
     /* Main Speakers */
     .main-speakers {
-        padding-top: 20px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -58,24 +55,17 @@
             }
             @media only screen and (max-width:800px) {
                 grid-template-columns: 1fr 1fr;
-                grid-row-gap: 20px;
-                grid-column-gap: 20px;
             }
             @media only screen and (max-width:500px) {
                 grid-template-columns: 1fr;
-                grid-row-gap: 20px;
-                grid-column-gap: 20px;
             }
         }
     }
 
     // Other Speakers
     .other-speakers {
+        @extend .main-speakers;
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        justify-content: center;
         .other-speakers-container {
             display: grid;
             grid-template-rows: 1fr 1fr;
@@ -91,7 +81,6 @@
                 border-radius: 20%;
                 img {
                     width: 100%;
-                    height: 100%;
                     border-radius: 20%;
                     z-index: 1;
                     transition: 0.5s;
@@ -116,18 +105,12 @@
             }
             @media only screen and (max-width:800px) {
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-row-gap: 20px;
-                grid-column-gap: 20px;
             }
             @media only screen and (max-width:650px) {
                 grid-template-columns: 1fr 1fr;
-                grid-row-gap: 20px;
-                grid-column-gap: 20px;
             }
             @media only screen and (max-width:500px) {
                 grid-template-columns: 1fr;
-                grid-row-gap: 20px;
-                grid-column-gap: 20px;
             }
         }
         @media only screen and (max-width:500px) {

@@ -3,10 +3,9 @@
 /* Contact */
 
 .contact-form {
+    @include background-settings;
     background-image: url(../images/background1.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    padding: 20px 0px 50px 0px;
+    padding-bottom: 50px;
     .contact-title {
         @include title
     }
@@ -22,10 +21,20 @@
             margin-bottom: 30px;
             h2 {
                 font-size: 35px;
+                @media only screen and (max-width: 400px) {
+                    font-size: 25px;
+                }
             }  
             h3 {
                 font-size: 15px;
-            }          
+                @media only screen and (max-width: 400px) {
+                    font-size: 10px;
+                }
+            }
+            @media only screen and (max-width: 400px) {
+                padding: 10px 10px;
+                min-width: 250px;
+            }
         }
     }
     form {
@@ -56,13 +65,8 @@
                 margin-right: auto;
                 transition: stretch 1s ease-in;
                 &:hover {
+                    @include button-animation;
                     cursor: pointer;
-                    animation-name: stretch;
-                    animation-duration: 1s;
-                    animation-timing-function: ease-out;
-                    animation-direction: alternate;
-                    animation-iteration-count: infinite;
-                    animation-play-state: running;
                 }
             }
         }

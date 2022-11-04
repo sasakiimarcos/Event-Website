@@ -3,10 +3,9 @@
 /* Venue */
 
 .venue {
-    padding: 20px 0px 40px 0px;
+    @include background-settings;
     background-image: url(../images/background4.jpg);
-    background-position: center;
-    background-attachment: fixed;
+    padding-bottom: 40px;
     .venue-title {
         @include title
     }

@@ -10,3 +10,37 @@ $main-color: rgb(235, 235, 235, 0.8);
     margin-left: auto;
     margin-right: auto;
 }
+
+@mixin background-settings {
+    padding: 20px 0;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@mixin article {
+    margin: 20px 10px 0px 10px;
+    display: grid;
+    grid-column-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+@mixin button-animation {
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+// Button animation
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}

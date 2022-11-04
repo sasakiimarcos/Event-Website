@@ -3,10 +3,8 @@
 /* About Us Articles*/
 
 .aboutus {
-    padding: 20px 0;
+    @include background-settings;
     background-image: url(../images/background7.jpg);
-    background-position: center;
-    background-attachment: fixed;
     .aboutus-title {
         @include title
     }
@@ -15,16 +13,10 @@
         background-color: $main-color;
         margin: 50px 0px;
         .article1 {
-            margin: 20px 10px 0px 10px;
-            display: grid;
+            @include article;
             grid-template-areas: 
             "image head"
             "image text";
-            grid-template-rows: 1fr 2fr;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 20px;
-            justify-items: stretch;
-            align-items: stretch;
             .article-header {
                 display: grid;
                 grid-area: head;
@@ -46,38 +38,25 @@
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 7vh 2fr 30vh;
-                grid-template-columns: 1fr 1fr;
             }
             @media only screen and (max-width: 500px) {
                 grid-template-areas: 
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 7vh 2fr 40vh;
-                grid-template-columns: 1fr 1fr;
             }
             @media only screen and (max-width: 400px) {
                 grid-template-areas: 
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 7vh 2fr 55vh;
-                grid-template-columns: 1fr 1fr;
             }
         }
         .article2 {
-            margin: 20px 10px 0px 10px;
-            display: grid;
+            @include article;
             grid-template-areas: 
             "head image"
             "text image";
-            grid-template-rows: 1fr 2fr;
-            grid-template-columns: 1fr 1fr;
-            grid-row-gap: 10px;
-            grid-column-gap: 20px;
-            justify-items: stretch;
-            align-items: stretch;
             .article-header {
                 display: grid;
                 grid-area: head;
@@ -99,21 +78,18 @@
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 7vh 2fr 30vh;
             }
             @media only screen and (max-width: 500px) {
                 grid-template-areas: 
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 7vh 2fr 40vh;
             }
             @media only screen and (max-width: 400px) {
                 grid-template-areas: 
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 7vh 2fr 55vh;
             }
         }
     }

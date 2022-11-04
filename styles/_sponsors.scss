@@ -3,10 +3,8 @@
 /* Sponsors */
 
 .sponsor-container {
-    padding: 20px 0px;
+    @include background-settings;
     background-image: url(../images/background2.jpg);
-    background-position: center;
-    background-attachment: fixed;
     .sponsors-title {
         @include title
     }
