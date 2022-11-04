@@ -1,3 +1,5 @@
+@import "./variables";
+
 /* Schedule Table */
 
 .schedule {
@@ -5,6 +7,10 @@
     background-image: url(../images/background6.jpg);
     background-position: center;
     background-attachment: fixed;
+    overflow: scroll;
+    .schedule-title {
+        @include title
+    }
     .schedule-table {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -15,6 +21,11 @@
         margin-left: auto;
         margin-right: auto;
         text-align: start;
+        @media only screen and (max-width: 500px) {
+            font-size: small;
+            color: black;
+            font-weight: 600;
+        }
         thead tr {
             background-color: rgb(209, 209, 209);
             text-align: left;

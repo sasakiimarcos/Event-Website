@@ -1,3 +1,5 @@
+@import "./variables";
+
 /* Index Banner */
 
 .banner {
@@ -27,9 +29,12 @@
             display: block;
             text-align: center;
             font-weight: bold;
+            @media only screen and (max-width: 500px) {
+                font-size: 60px;
+            }
         }
         span {
-            background-color: rgb(235, 235, 235, 0.8);  
+            background-color: $main-color;  
             padding: 10px;
             border-radius: 10px;
         }
@@ -38,6 +43,9 @@
             @media only screen and (max-width: 700px) {
                 font-size: 3vw;
             }
+            @media only screen and (max-width: 500px) {
+                font-size: 11px;
+            }
         }
         h2 {
             margin-bottom: 30px;
@@ -45,10 +53,10 @@
             display: block;
             text-align: center;
             @media only screen and (max-width: 700px) {
-                margin-bottom: 30px;
                 font-size: 4vw;
-                display: block;
-                text-align: center;
+            }
+            @media only screen and (max-width: 500px) {
+                font-size: 15px;
             }
         }
         .banner-text-info {
@@ -56,7 +64,7 @@
         flex-wrap: wrap;
         justify-content:space-evenly;
             .banner-text-info-child {
-                background-color: rgb(235, 235, 235, 0.8);
+                background-color: $main-color;
                 padding: 20px;
                 margin-bottom: 20px;
                 display: inline-flex;
@@ -102,11 +110,7 @@
             object-fit: cover;
             opacity: 0.3;
             @media only screen and (max-width: 700px) {
-                border-radius: 50px;
                 width: 70vw;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0.3;
             }
         }
         .info-block-text {
@@ -115,32 +119,23 @@
             align-self: center;
             justify-self: center;
             color: white;
-            h1 {
+            h2 {
                 text-align: center;
                 font-size: 10vw;
                 @media only screen and (max-width: 700px) {
-                    text-align: center;
                     font-size: 15vw;
                 }
             }
-            h2 {
+            h3 {
                 text-align: center;
                 font-size: 2vw;
                 @media only screen and (max-width: 700px) {
-                    text-align: center;
                     font-size: 4vw;
                 }  
             }
         }
     }
     @media only screen and (max-width: 700px) {
-        padding-top: 30px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);    
-        justify-items: center;
-        grid-gap: 20px;
-        background-image: linear-gradient(rgb(0,0,0,0.8), rgb(255,255,255,0.6), rgb(0,0,0,0.8));
-        padding-bottom: 30px;
+        grid-template-columns: 1fr;
     }
 }

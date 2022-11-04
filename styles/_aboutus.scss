@@ -1,3 +1,5 @@
+@import "./variables";
+
 /* About Us Articles*/
 
 .aboutus {
@@ -6,30 +8,23 @@
     background-position: center;
     background-attachment: fixed;
     .aboutus-title {
-        border-radius: 20px;
-        background-color: rgb(235, 235, 235, 0.8);
-        margin-left: auto;
-        margin-right: auto;
-        width: fit-content;
-        h1 {
-            padding: 20px;
-            margin-bottom: 40px;
-        }
+        @include title
     }
     .aboutus-container {
         padding: 20px;
-        background-color: rgb(255, 255, 255, 0.9);
+        background-color: $main-color;
         margin: 50px 0px;
         .article1 {
             margin: 20px 10px 0px 10px;
             display: grid;
             grid-template-areas: 
             "image head"
-            "image text"
             "image text";
             grid-template-rows: 1fr 2fr;
             grid-template-columns: 1fr 1fr;
             grid-column-gap: 20px;
+            justify-items: stretch;
+            align-items: stretch;
             .article-header {
                 display: grid;
                 grid-area: head;
@@ -44,18 +39,31 @@
                 display: grid;
                 grid-area: image;
                 width: 100%;
+                object-fit: cover;
             }
-            @media only screen and (max-width: 600px) {
-                margin: 20px 10px 0px 10px;
-                display: grid;
+            @media only screen and (max-width: 800px) {
                 grid-template-areas: 
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 1fr 4fr 2fr;
+                grid-template-rows: 7vh 2fr 30vh;
                 grid-template-columns: 1fr 1fr;
-                grid-row-gap: 10px;
-                grid-column-gap: 20px;
+            }
+            @media only screen and (max-width: 500px) {
+                grid-template-areas: 
+                "head head"
+                "image image"
+                "text text";
+                grid-template-rows: 7vh 2fr 40vh;
+                grid-template-columns: 1fr 1fr;
+            }
+            @media only screen and (max-width: 400px) {
+                grid-template-areas: 
+                "head head"
+                "image image"
+                "text text";
+                grid-template-rows: 7vh 2fr 55vh;
+                grid-template-columns: 1fr 1fr;
             }
         }
         .article2 {
@@ -63,12 +71,13 @@
             display: grid;
             grid-template-areas: 
             "head image"
-            "text image"
             "text image";
             grid-template-rows: 1fr 2fr;
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 10px;
             grid-column-gap: 20px;
+            justify-items: stretch;
+            align-items: stretch;
             .article-header {
                 display: grid;
                 grid-area: head;
@@ -83,18 +92,28 @@
                 display: grid;
                 grid-area: image;
                 width: 100%;
+                object-fit: cover;
             }
-            @media only screen and (max-width: 600px) {
-                margin: 20px 10px 0px 10px;
-                display: grid;
+            @media only screen and (max-width: 800px) {
                 grid-template-areas: 
                 "head head"
                 "image image"
                 "text text";
-                grid-template-rows: 1fr 4fr 2fr;
-                grid-template-columns: 1fr 1fr;
-                grid-row-gap: 10px;
-                grid-column-gap: 20px;
+                grid-template-rows: 7vh 2fr 30vh;
+            }
+            @media only screen and (max-width: 500px) {
+                grid-template-areas: 
+                "head head"
+                "image image"
+                "text text";
+                grid-template-rows: 7vh 2fr 40vh;
+            }
+            @media only screen and (max-width: 400px) {
+                grid-template-areas: 
+                "head head"
+                "image image"
+                "text text";
+                grid-template-rows: 7vh 2fr 55vh;
             }
         }
     }
