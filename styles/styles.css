@@ -694,7 +694,8 @@
   width: 100%;
   padding: 20px;
   margin-bottom: 20px;
-  box-sizing: border-box; /*Adjusts border of the box*/
+  box-sizing: border-box;
+  /*Adjusts border of the box*/
   font-family: Arial, Helvetica, sans-serif;
 }
 .contact-form form textarea {

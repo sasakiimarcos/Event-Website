@@ -3,9 +3,11 @@
 .sitemap {
     @include background-settings;
     background-image: url(../images/background8.jpg);
+
     .sitemap-title {
         @include title;
     }
+
     .sitemap-list {
         margin: 40px;
         background-color: $main-color;

@@ -5,27 +5,33 @@
 .aboutus {
     @include background-settings;
     background-image: url(../images/background7.jpg);
+
     .aboutus-title {
         @include title
     }
+
     .aboutus-container {
         padding: 20px;
         background-color: $main-color;
         margin: 50px 0px;
+
         .article1 {
             @include article;
-            grid-template-areas: 
-            "image head"
-            "image text";
+            grid-template-areas:
+                "image head"
+                "image text";
+
             .article-header {
                 display: grid;
                 grid-area: head;
                 align-items: flex-end;
             }
+
             .article-text {
                 display: grid;
                 grid-area: text;
             }
+
             .article-image {
                 border-radius: 10px;
                 display: grid;
@@ -33,39 +39,37 @@
                 width: 100%;
                 object-fit: cover;
             }
+
             @media only screen and (max-width: 800px) {
-                grid-template-areas: 
-                "head head"
-                "image image"
-                "text text";
+                grid-template-areas: $template-areas;
             }
+
             @media only screen and (max-width: 500px) {
-                grid-template-areas: 
-                "head head"
-                "image image"
-                "text text";
+                grid-template-areas: $template-areas;
             }
+
             @media only screen and (max-width: 400px) {
-                grid-template-areas: 
-                "head head"
-                "image image"
-                "text text";
+                grid-template-areas: $template-areas;
             }
         }
+
         .article2 {
             @include article;
-            grid-template-areas: 
-            "head image"
-            "text image";
+            grid-template-areas:
+                "head image"
+                "text image";
+
             .article-header {
                 display: grid;
                 grid-area: head;
                 align-items: flex-end;
             }
+
             .article-text {
                 display: grid;
                 grid-area: text;
             }
+
             .article-image {
                 border-radius: 10px;
                 display: grid;
@@ -73,23 +77,17 @@
                 width: 100%;
                 object-fit: cover;
             }
+
             @media only screen and (max-width: 800px) {
-                grid-template-areas: 
-                "head head"
-                "image image"
-                "text text";
+                grid-template-areas: $template-areas;
             }
+
             @media only screen and (max-width: 500px) {
-                grid-template-areas: 
-                "head head"
-                "image image"
-                "text text";
+                grid-template-areas: $template-areas;
             }
+
             @media only screen and (max-width: 400px) {
-                grid-template-areas: 
-                "head head"
-                "image image"
-                "text text";
+                grid-template-areas: $template-areas;
             }
         }
     }

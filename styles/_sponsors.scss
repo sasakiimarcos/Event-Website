@@ -5,9 +5,11 @@
 .sponsor-container {
     @include background-settings;
     background-image: url(../images/background2.jpg);
+
     .sponsors-title {
         @include title
     }
+
     .sponsors {
         display: grid;
         gap: 1rem;
@@ -15,17 +17,21 @@
         grid-auto-rows: 250px;
         justify-content: center;
         grid-row-gap: 30px;
+
         .sponsors-logos {
             display: grid;
             justify-items: center;
+
             .sponsors-logos-image {
                 width: fit-content;
                 background-color: rgb(128, 128, 128);
                 border-radius: 50px;
+
                 img {
                     width: 250px;
                     border-radius: 50px;
                     transition: 0.5s;
+
                     &:hover {
                         opacity: 0.8;
                     }

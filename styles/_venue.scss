@@ -6,49 +6,60 @@
     @include background-settings;
     background-image: url(../images/background4.jpg);
     padding-bottom: 40px;
+
     .venue-title {
         @include title
     }
+
     .venue-text {
         text-align: center;
         padding-bottom: 10px;
     }
+
     .venue-photos {
         background-color: $main-color;
         padding: 20px 0px;
+
         .photos {
             display: flex;
             width: 100%;
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
+
         .photos-hotel {
             display: flex;
             padding-bottom: 20px;
+
             img {
-                object-fit:cover;  
+                object-fit: cover;
                 max-height: 300px;
+
                 @media only screen and (max-width: 500px) {
                     max-width: 55vh;
                 }
             }
         }
     }
+
     .venue-map {
         padding: 20px 0px;
         margin-top: 40px;
         background-color: $main-color;
+
         .map {
             display: flex;
             justify-content: center;
             padding-bottom: 20px;
+
             iframe {
                 display: flex;
-                width:50%;
+                width: 50%;
+
                 @media only screen and (max-width:800px) {
                     width: 80%;
                 }
             }
-        }        
+        }
     }
 }

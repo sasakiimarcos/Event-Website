@@ -8,8 +8,8 @@
 @import "./register";
 @import "./sitemap";
 
-*{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -19,10 +19,11 @@ body {
 
 /* Navbar */
 
-.navbar-brand img{
+.navbar-brand img {
     max-width: 100px;
     transition: 0.5s;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
 }
@@ -38,9 +39,11 @@ body {
     background-color: gainsboro;
     position: absolute;
     width: 100%;
-    .footer-socials{
+
+    .footer-socials {
         text-align: center;
-        a{
+
+        a {
             background-color: lightgrey;
             text-decoration: none;
             color: black;
@@ -50,14 +53,17 @@ body {
             border-style: groove;
             border-radius: 50%;
             transition: 0.5s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.2);
                 background-color: aliceblue;
             }
         }
     }
+
     .footer-list {
         text-align: center;
+
         li {
             margin-left: 5px;
             margin-right: 5px;
@@ -65,16 +71,19 @@ body {
             display: inline-block;
             list-style: none;
             transition: 0.5s;
+
             &:hover {
                 transform: scale(1.1);
                 background-color: rgb(235, 235, 235);
             }
         }
+
         a {
             text-decoration: none;
             color: black;
+
             @media only screen and (max-width: 600px) {
-                font-size:x-small;
+                font-size: x-small;
             }
         }
     }

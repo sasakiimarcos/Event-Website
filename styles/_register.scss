@@ -4,18 +4,22 @@
     @include background-settings;
     background-image: url(../images/background3.jpg);
     padding-bottom: 40px;
+
     .register-title {
         @include title
     }
+
     form {
         width: 60%;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+
         @media only screen and (max-width: 700px) {
             width: 80%;
-        }    
+        }
     }
+
     .register-form-text {
         display: block;
         padding: 20px;
@@ -23,15 +27,18 @@
         box-sizing: border-box;
         margin-bottom: 20px;
     }
+
     .register-form-register {
         display: flex;
+
         input {
             border-radius: 5px;
             padding: 10px;
-            background-color: $main-color; 
+            background-color: $main-color;
             font-size: larger;
             margin-left: auto;
             margin-right: auto;
+
             &:hover {
                 @include button-animation;
                 cursor: pointer;
