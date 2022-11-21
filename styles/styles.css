@@ -6,6 +6,78 @@
     transform: scale(1.1);
   }
 }
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+/* Navbar */
+.navbar-brand img {
+  max-width: 100px;
+  transition: 0.5s;
+}
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 30px;
+  background-color: gainsboro;
+  position: absolute;
+  width: 100%;
+}
+.footer .footer-socials {
+  text-align: center;
+}
+.footer .footer-socials a {
+  background-color: lightgrey;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  font-size: large;
+  border-style: groove;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.footer .footer-socials a:hover {
+  transform: scale(1.2);
+  background-color: aliceblue;
+}
+.footer .footer-list {
+  text-align: center;
+}
+.footer .footer-list li {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  display: inline-block;
+  list-style: none;
+  transition: 0.5s;
+}
+.footer .footer-list li:hover {
+  transform: scale(1.1);
+  background-color: rgb(235, 235, 235);
+}
+.footer .footer-list a {
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .footer .footer-list a {
+    font-size: x-small;
+  }
+}
+
 /* Index Banner */
 .banner {
   position: relative;
@@ -52,16 +124,16 @@
   padding: 10px;
   border-radius: 10px;
 }
-.banner .banner-text h4 {
+.banner .banner-text h3 {
   font-size: 1.75vw;
 }
 @media only screen and (max-width: 700px) {
-  .banner .banner-text h4 {
+  .banner .banner-text h3 {
     font-size: 3vw;
   }
 }
 @media only screen and (max-width: 500px) {
-  .banner .banner-text h4 {
+  .banner .banner-text h3 {
     font-size: 11px;
   }
 }
@@ -172,14 +244,6 @@
   }
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 /* About Us Articles*/
 .aboutus {
   padding: 20px 0;
@@ -281,14 +345,6 @@
   }
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 .speakers {
   padding: 20px 0;
   background-position: center;
@@ -423,14 +479,6 @@
   }
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 /* Schedule Table */
 .schedule {
   padding: 20px 0;
@@ -500,14 +548,6 @@
   }
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 /* Venue */
 .venue {
   padding: 20px 0;
@@ -573,14 +613,6 @@
   }
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 /* Sponsors */
 .sponsor-container {
   padding: 20px 0;
@@ -624,14 +656,6 @@
   opacity: 0.8;
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 /* Contact */
 .contact-form {
   padding: 20px 0;
@@ -738,14 +762,6 @@
     transform: scale(1.1);
   }
 }
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 .register-form {
   padding: 20px 0;
   background-position: center;
@@ -802,14 +818,6 @@
   cursor: pointer;
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 .sitemap {
   padding: 20px 0;
   background-position: center;
@@ -831,78 +839,6 @@
   background-color: rgba(235, 235, 235, 0.8);
   padding: 25px;
   border-radius: 20px;
-}
-
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  margin: 0px;
-  background-color: black;
-}
-
-/* Navbar */
-.navbar-brand img {
-  max-width: 100px;
-  transition: 0.5s;
-}
-.navbar-brand img:hover {
-  transform: scale(1.1);
-}
-
-.nav-item {
-  margin-left: 10px;
-}
-
-/* Footer */
-.footer {
-  padding-top: 30px;
-  background-color: gainsboro;
-  position: absolute;
-  width: 100%;
-}
-.footer .footer-socials {
-  text-align: center;
-}
-.footer .footer-socials a {
-  background-color: lightgrey;
-  text-decoration: none;
-  color: black;
-  margin: 10px;
-  padding: 10px;
-  font-size: large;
-  border-style: groove;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-.footer .footer-socials a:hover {
-  transform: scale(1.2);
-  background-color: aliceblue;
-}
-.footer .footer-list {
-  text-align: center;
-}
-.footer .footer-list li {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 10px;
-  display: inline-block;
-  list-style: none;
-  transition: 0.5s;
-}
-.footer .footer-list li:hover {
-  transform: scale(1.1);
-  background-color: rgb(235, 235, 235);
-}
-.footer .footer-list a {
-  text-decoration: none;
-  color: black;
-}
-@media only screen and (max-width: 600px) {
-  .footer .footer-list a {
-    font-size: x-small;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
