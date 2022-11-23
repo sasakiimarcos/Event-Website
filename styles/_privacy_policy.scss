@@ -1,0 +1,13 @@
+.privacypolicy {
+    @include background-settings;
+    background-image: url(../images/background9.jpg);
+    h1 {
+        @include title
+    }
+    .privacypolicy-container {
+        background-color: $main-color;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 50px;
+    }
+}

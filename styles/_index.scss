@@ -73,6 +73,10 @@
             @media only screen and (max-width: 500px) {
                 font-size: 15px;
             }
+
+            @media only screen and (max-width: 300px) {
+                font-size: 13px;
+            }
         }
 
         .banner-text-info {
@@ -105,6 +109,11 @@
                 border-radius: 20px;
                 padding: 20px;
                 margin: 20px;
+                p {
+                    @media only screen and (max-width: 500px) {
+                        font-size: 13px;
+                    }
+                }
             }
         }
     }

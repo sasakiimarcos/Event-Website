@@ -45,7 +45,7 @@ body {
   margin: 10px;
   padding: 10px;
   font-size: large;
-  border-style: groove;
+  border-style: solid;
   border-radius: 50%;
   transition: 0.5s;
 }
@@ -153,6 +153,11 @@ body {
     font-size: 15px;
   }
 }
+@media only screen and (max-width: 300px) {
+  .banner .banner-text h2 {
+    font-size: 13px;
+  }
+}
 .banner .banner-text .banner-text-info {
   display: flex;
   flex-wrap: wrap;
@@ -182,6 +187,11 @@ body {
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .banner .banner-text .banner-text-description .banner-text-description-background p {
+    font-size: 13px;
+  }
 }
 
 /* Index Info */
@@ -343,6 +353,9 @@ body {
   .aboutus .aboutus-container .article2 {
     grid-template-areas: "head head" "image image" "text text";
   }
+}
+.aboutus #aboutus-container-top {
+  margin-top: 0px;
 }
 
 .speakers {
@@ -593,6 +606,11 @@ body {
     max-width: 55vh;
   }
 }
+@media only screen and (max-width: 300px) {
+  .venue .venue-photos .photos-hotel img {
+    max-width: 30vh;
+  }
+}
 .venue .venue-map {
   padding: 20px 0px;
   margin-top: 40px;
@@ -654,6 +672,11 @@ body {
 }
 .sponsor-container .sponsors .sponsors-logos .sponsors-logos-image img:hover {
   opacity: 0.8;
+}
+@media only screen and (max-width: 500px) {
+  .sponsor-container .sponsors {
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
 }
 
 /* Contact */
@@ -839,6 +862,29 @@ body {
   background-color: rgba(235, 235, 235, 0.8);
   padding: 25px;
   border-radius: 20px;
+}
+
+.privacypolicy {
+  padding: 20px 0;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../images/background9.jpg);
+}
+.privacypolicy h1 {
+  padding: 20px;
+  background-color: rgba(235, 235, 235, 0.8);
+  border-radius: 20px;
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.privacypolicy .privacypolicy-container {
+  background-color: rgba(235, 235, 235, 0.8);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
